@@ -1,4 +1,4 @@
-import regex as re
+import  re
 from collections import Counter
 
 def find_words_frequency(file_path):

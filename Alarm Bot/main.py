@@ -14,6 +14,18 @@ def Threading():
 def alarm():
 	while True:
 		set_alarm_time = f"{hour.get()}:{minute.get()}:{second.get()}"
+		parts = set_alarm_time.split(":")
+		if(int(hour.get()) == 0):
+			parts[0] = "12"
+			set_alarm_time = ":".join(parts)
+			print(f"This is your 12-hour clock time {set_alarm_time}AM")
+		elif(int(hour.get()) >= 12):
+			parts[0] = str(int(parts[0]) - 12)
+			set_alarm_time = ":".join(parts)
+			print(f"This is your 12-hour clock time {set_alarm_time}PM")
+		elif(int(hour.get()) < 12):
+			print(f"This is your 12-hour clock time {set_alarm_time}AM")
+	
 		time.sleep(1)
 		current_time = datetime.datetime.now().strftime("%H:%M:%S")
 		print(current_time,set_alarm_time)
