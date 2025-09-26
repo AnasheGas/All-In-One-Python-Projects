@@ -1,0 +1,1 @@
+URL Shortner, creates a Shortner object that access the Tinyurl service to take a full url as its imput, returning a shortend url as the output

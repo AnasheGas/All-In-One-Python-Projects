@@ -14,6 +14,9 @@ c.execute('''CREATE TABLE IF NOT EXISTS tasks
 
 def add_task():
     task = task_entry.get()
+    if(len(str(task_entry.get)) > 10):
+        print("Longer task")
+    
     if task:
         c.execute("INSERT INTO tasks (task) VALUES (?)", (task,))
         conn.commit()
