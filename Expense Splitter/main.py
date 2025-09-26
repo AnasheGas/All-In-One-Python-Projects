@@ -19,8 +19,8 @@ def main() -> None:
         # Input for number of people
         number_of_people: int = int(input('Enter the number of people sharing the expense: '))
         
-        # Call the function to calculate the split with currency set to rupees
-        calculate_split(total_amount, number_of_people, currency="₹")
+        # Call the function to calculate the split with currency set to american dollar
+        calculate_split(total_amount, number_of_people, currency="$")
         
     except ValueError as e:
         print(f'Error: {e}')

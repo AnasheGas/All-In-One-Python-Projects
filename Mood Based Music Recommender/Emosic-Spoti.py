@@ -27,7 +27,7 @@ emotion_to_genre = {
     'hopeful': ['pop', 'inspirational', 'uplifting'],
     'content': ['soft rock', 'acoustic', 'country'],
     'romantic': ['pop', 'r&b', 'soul'],
-    'exotic' : ['afro-beats', 'afro-soul','braziaan']
+    'exotic' : ['afro-beats', 'afro-soul','brazlian']
 }
 
 # Function to recommend tracks based on emotion
