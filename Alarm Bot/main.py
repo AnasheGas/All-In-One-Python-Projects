@@ -12,9 +12,16 @@ def Threading():
 	t1.start()
 
 def alarm():
+
 	while True:
+		
 		set_alarm_time = f"{hour.get()}:{minute.get()}:{second.get()}"
-		parts = set_alarm_time.split(":")
+		parts = set_alarm_time.split(":")	
+		if(int(hour.get()) < 12):
+			print("Be advised this is an AM time, enter y or n")
+		else:
+			print("Be advised this is an PM time, enter y or n")
+			
 		if(int(hour.get()) == 0):
 			parts[0] = "12"
 			set_alarm_time = ":".join(parts)
