@@ -1,5 +1,6 @@
 from tkinter import *
 import tkinter as tk
+import winsound
 
 class Application(Frame):
     def __init__(self,master):
@@ -79,6 +80,7 @@ class Application(Frame):
 
     def countdown(self, timeInSeconds, start=True):
         if timeInSeconds == 0:
+            winsound.PlaySound("sound.wav",winsound.SND_ASYNC)
             self._starttime=0
             self.labelvariable.set("0")
             return
