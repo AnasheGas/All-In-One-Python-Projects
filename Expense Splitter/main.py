@@ -4,11 +4,13 @@ def calculate_split(total_amount: float, number_of_people: int, currency: str) -
 
     # Calculate the share per person
     share_per_person: float = total_amount / number_of_people
+    louisiana_tax = (total_amount * .0475) 
 
     # Print the results
     print(f'Total expenses: {currency}{total_amount:,.2f}')
     print(f'Number of people: {number_of_people}')
     print(f'Each person should pay: {currency}{share_per_person:,.2f}')
+    print(f'This is the tax: ${louisiana_tax:,.2f}')
 
 
 def main() -> None:
