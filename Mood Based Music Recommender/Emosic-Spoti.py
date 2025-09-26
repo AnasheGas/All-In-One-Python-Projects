@@ -16,17 +16,18 @@ emotion_to_genre = {
     'sad': ['acoustic', 'blues', 'piano'],
     'angry': ['metal', 'rock', 'punk'],
     'relaxed': ['ambient', 'chill', 'classical'],
-    'energetic': ['electronic', 'hip-hop', 'funk'],
+    'energetic': ['electronic', 'hip-hop', 'funk','phonk'],
     'anxious': ['ambient', 'classical', 'jazz'],
     'cheerful': ['pop', 'indie', 'reggae'],
     'stressed': ['jazz', 'chill', 'lo-fi'],
-    'dreamy': ['dream-pop', 'ambient', 'shoegaze'],
+    'dreamy': ['dream-pop', 'ambient', 'shoegaze','phonk'],
     'excited': ['dance', 'electronic', 'pop'],
     'bored': ['alternative', 'indie', 'chill'],
     'nostalgic': ['classic rock', 'folk', 'retro'],
     'hopeful': ['pop', 'inspirational', 'uplifting'],
     'content': ['soft rock', 'acoustic', 'country'],
     'romantic': ['pop', 'r&b', 'soul'],
+    'exotic' : ['afro-beats', 'afro-soul','braziaan']
 }
 
 # Function to recommend tracks based on emotion
