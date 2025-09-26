@@ -2,10 +2,14 @@ from tkinter import *
 import datetime
 import time
 import winsound
+import pyfiglet
 from threading import *
 
 root = Tk()
 root.geometry("400x200")
+
+# Create ASCII art with the default font
+
 
 def Threading():
 	t1=Thread(target=alarm)
@@ -13,14 +17,16 @@ def Threading():
 
 def alarm():
 
+	text_with_default_font = pyfiglet.figlet_format("THE BEST CLOCK APP")
+	print(text_with_default_font)
 	while True:
-		
 		set_alarm_time = f"{hour.get()}:{minute.get()}:{second.get()}"
+
 		parts = set_alarm_time.split(":")	
 		if(int(hour.get()) < 12):
-			print("Be advised this is an AM time, enter y or n")
+			print("Be advised this is an AM time")
 		else:
-			print("Be advised this is an PM time, enter y or n")
+			print("Be advised this is an PM time")
 			
 		if(int(hour.get()) == 0):
 			parts[0] = "12"
